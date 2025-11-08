@@ -1,0 +1,6 @@
+@Examen2doPWA_HostAddress = http://localhost:5134
+
+GET {{Examen2doPWA_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
