@@ -16,40 +16,39 @@ namespace Examen2doPWA.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Seed data
             modelBuilder.Entity<Participante>().HasData(
                 new Participante
                 {
                     Id = 1,
-                    Nombre = "Carlos",
-                    Apellidos = "García López",
-                    Email = "carlos.garcia@utleon.edu.mx",
-                    UsuarioTwitter = "@CarlosGL",
+                    Nombre = "Messi",
+                    Apellidos = "Leonel",
+                    Email = "goat@utleon.edu.mx",
+                    UsuarioTwitter = "https://x.com/leomessisite?lang=es",
                     Ocupacion = "Desarrollador Full Stack",
-                    Avatar = "https://i.pravatar.cc/150?img=12",
-                    FechaRegistro = DateTime.UtcNow
+                    Avatar = "https://fifpro.org/media/5chb3dva/lionel-messi_imago1019567000h.jpg?rxy=0.32986930611281567,0.18704579979466449&rnd=133378758718600000",
+                    FechaRegistro = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
                 },
                 new Participante
                 {
                     Id = 2,
-                    Nombre = "María",
-                    Apellidos = "Rodríguez Pérez",
-                    Email = "maria.rodriguez@utleon.edu.mx",
-                    UsuarioTwitter = "@MariaRP",
-                    Ocupacion = "Data Scientist",
-                    Avatar = "https://i.pravatar.cc/150?img=45",
-                    FechaRegistro = DateTime.UtcNow
+                    Nombre = "CR7",
+                    Apellidos = "Penaldo",
+                    Email = "penaldo@utleon.edu.mx",
+                    UsuarioTwitter = "https://x.com/Cristiano",
+                    Ocupacion = "Generador de penales",
+                    Avatar = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAWRTlPgbJmYTdG6UEyeU9cUlBlHHcpccfDEPuM8PRDSoioEf-fquWcWsyfbLCv-w9Mpv4RbHmzauIabXPWce7uzXiGyvkveXkELLUr0Q&s=10",
+                    FechaRegistro = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
                 },
                 new Participante
                 {
                     Id = 3,
-                    Nombre = "Juan",
-                    Apellidos = "Martínez Sánchez",
-                    Email = "juan.martinez@utleon.edu.mx",
-                    UsuarioTwitter = "@JuanMS",
+                    Nombre = "balderas",
+                    Apellidos = "Sanchez",
+                    Email = "78643@utleon.edu.mx",
+                    UsuarioTwitter = "https://x.com/NachoAmbriz1",
                     Ocupacion = "DevOps Engineer",
-                    Avatar = "https://i.pravatar.cc/150?img=33",
-                    FechaRegistro = DateTime.UtcNow
+                    Avatar = "https://www.infobae.com/resizer/v2/UPGSJ35VNJDRFI6Y3II4QNQYVE.jpg?auth=e000c19b39b8d9fd3742fba0f250e843d8c3d38f14e62d49b70643278f9ee4a6&smart=true&width=350&height=197&quality=85",
+                    FechaRegistro = new DateTime(2024, 1, 1, 0, 0, 0, DateTimeKind.Utc)
                 }
             );
         }
